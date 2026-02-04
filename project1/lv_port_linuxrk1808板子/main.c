@@ -53,8 +53,7 @@ int main(void)
     // lv_indev_set_cursor(mouse_indev, cursor_obj);             /*Connect the image  object to the driver*/
     // */
 
-    /*Create a Demo*/
-    lv_demo_widgets();
+
 
     /*Handle LitlevGL tasks (tickless mode)*/
     while(1) {

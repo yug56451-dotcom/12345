@@ -77,7 +77,7 @@ void ui_helloscreen_screen_init(void)
 
     lv_obj_set_style_text_color(ui_Dropdown3, lv_color_hex(0x000000), LV_PART_INDICATOR | LV_STATE_DEFAULT);
     lv_obj_set_style_text_opa(ui_Dropdown3, 255, LV_PART_INDICATOR | LV_STATE_DEFAULT);
-    lv_obj_set_style_text_font(ui_Dropdown3, &lv_font_montserrat_30, LV_PART_INDICATOR | LV_STATE_DEFAULT);
+    lv_obj_set_style_text_font(ui_Dropdown3, &ui_font_chinese30, LV_PART_INDICATOR | LV_STATE_DEFAULT);
 
     lv_obj_set_style_text_font(lv_dropdown_get_list(ui_Dropdown3), &ui_font_chinese30,  LV_PART_MAIN | LV_STATE_DEFAULT);
 
