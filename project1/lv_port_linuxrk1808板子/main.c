@@ -14,6 +14,8 @@ int main(void)
     /*LittlevGL init*///设备初始化
     lv_init();
 
+    ui_init();
+
     /*Linux frame buffer device init*///驱动初始化
     fbdev_init();
 

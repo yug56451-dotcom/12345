@@ -6,7 +6,8 @@ LVGL_DIR_NAME 	?= lvgl
 LVGL_DIR 		?= .
 
 WARNINGS		:= -Wall -std=c99
-CFLAGS 			?= -O3 -g0 -I$(LVGL_DIR)/ $(WARNINGS)
+CFLAGS 			?= -O3 -g0 -I$(LVGL_DIR)/ $(WARNINGS) -I$(LVGL_DIR)/ui
+
 LDFLAGS 		?= -lm
 BIN 			= demo
 BUILD_DIR 		= ./build
@@ -25,7 +26,7 @@ include $(LVGL_DIR)/lv_drivers/lv_drivers.mk
 CSRCS 			+=$(LVGL_DIR)/mouse_cursor_icon.c 
 
 OBJEXT 			?= .o
-
+CSRCS           +=$(shell find $(LVGL_DIR)/ui -name "*.c")
 AOBJS 			= $(ASRCS:.S=$(OBJEXT))
 COBJS 			= $(CSRCS:.c=$(OBJEXT))
 
