@@ -4,6 +4,61 @@
 // Project name: test1
 
 #include "../ui.h"
+// 新增：引入字符串处理头文件（用于拼接百分比文本）
+#include <stdio.h>
+
+// 全局变量：进度值（供定时器回调使用）
+static int loading_progress = 0;
+// 全局变量：定时器句柄（用于后续销毁）
+static lv_timer_t *loading_timer = NULL;
+
+// 新增：定时器回调函数（核心：更新进度条和百分比Label）
+static void loading_timer_cb(lv_timer_t *timer)
+{
+    // 1. 增加进度值（每次+1，可调整步长）
+    loading_progress++;
+    
+    // 2. 更新进度条数值（LVGL 8.x 中 lv_bar_set_value 是设置进度的核心函数）
+    lv_bar_set_value(ui_bar1, loading_progress, LV_ANIM_ON);  // LV_ANIM_ON 开启进度条动画
+    
+    // 3. 拼接百分比文本（如 "50%"）
+    char progress_text[10];  // 足够存储 "100%" + 结束符
+    snprintf(progress_text, sizeof(progress_text), "%d%%", loading_progress);
+    
+    // 4. 更新Label显示
+    lv_label_set_text(ui_barLabel, progress_text);
+    
+    // 5. 进度达到100%时，停止定时器
+    if(loading_progress >= 100) {
+        lv_timer_del(loading_timer);  // 销毁定时器
+        loading_timer = NULL;         // 清空句柄
+        loading_progress = 0;         // 重置进度值（可选）
+    }
+}
+
+// 新增：启动加载动画的函数（供初始化调用）
+static void start_loading_animation(void)
+{
+    // 重置进度值
+    loading_progress = 0;
+    
+    // 销毁旧定时器（避免重复创建）
+    if(loading_timer != NULL) {
+        lv_timer_del(loading_timer);
+        loading_timer = NULL;
+    }
+    
+    // 设置进度条的范围（0~100）
+    lv_bar_set_range(ui_bar1, 0, 100);
+    // 初始化进度条为0
+    lv_bar_set_value(ui_bar1, 0, LV_ANIM_OFF);
+    // 初始化Label显示
+    lv_label_set_text(ui_barLabel, "0%");
+    
+    // 创建定时器：每隔50ms触发一次回调（可调整间隔，越小动画越平滑）
+    // 参数说明：回调函数、间隔时间(ms)、用户数据（这里用NULL）
+    loading_timer = lv_timer_create(loading_timer_cb, 20, NULL);
+}
 
 void ui_helloscreen_screen_init(void)
 {
@@ -85,4 +140,6 @@ void ui_helloscreen_screen_init(void)
     lv_obj_add_event_cb(ui_barLabel, ui_event_barLabel, LV_EVENT_ALL, NULL);
     lv_obj_add_event_cb(ui_Button2, ui_event_Button2, LV_EVENT_ALL, NULL);
 
+    // 新增：界面初始化完成后，启动加载动画
+    start_loading_animation();
 }
