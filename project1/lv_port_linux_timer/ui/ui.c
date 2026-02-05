@@ -189,6 +189,91 @@ void ui_event_nextpageButon2(lv_event_t * e);
 lv_obj_t * ui_lastpageButon2;
 lv_obj_t * ui_nextpageButon2;
 lv_obj_t * ui_backButton3;
+lv_obj_t * ui_Buttonconfirm2;
+lv_obj_t * ui_Labelconfirm2;
+lv_obj_t * ui____initial_actions0;
+
+// SCREEN: ui_order3
+void ui_order3_screen_init(void);
+lv_obj_t * ui_order3;
+lv_obj_t * ui_Container8;
+lv_obj_t * ui_number30;
+lv_obj_t * ui_Imagenumber30;
+lv_obj_t * ui_infcontainernumber30;
+lv_obj_t * ui_ImgButtonleftnumber30;
+lv_obj_t * ui_label1number30;
+lv_obj_t * ui_label2number30;
+lv_obj_t * ui_ImgButtonrightnumber30;
+lv_obj_t * ui_number29;
+lv_obj_t * ui_Imagenumbe29;
+lv_obj_t * ui_infcontainernumber29;
+lv_obj_t * ui_ImgButtonleftnumber29;
+lv_obj_t * ui_label1number29;
+lv_obj_t * ui_label2number29;
+lv_obj_t * ui_ImgButtonrightnumber29;
+lv_obj_t * ui_number28;
+lv_obj_t * ui_Imagenumber28;
+lv_obj_t * ui_infcontainernumber28;
+lv_obj_t * ui_ImgButtonleftnumber28;
+lv_obj_t * ui_label1number28;
+lv_obj_t * ui_label2number28;
+lv_obj_t * ui_ImgButtonrightnumber28;
+lv_obj_t * ui_number27;
+lv_obj_t * ui_Imagenumber27;
+lv_obj_t * ui_infcontainernumber27;
+lv_obj_t * ui_ImgButtonleftnumber27;
+lv_obj_t * ui_label1number27;
+lv_obj_t * ui_label2number27;
+lv_obj_t * ui_ImgButtonrightnumber27;
+lv_obj_t * ui_number26;
+lv_obj_t * ui_Imagenumber26;
+lv_obj_t * ui_infcontainernumber26;
+lv_obj_t * ui_ImgButtonleftnumber26;
+lv_obj_t * ui_label1number26;
+lv_obj_t * ui_label2number26;
+lv_obj_t * ui_ImgButtonrightnumber26;
+lv_obj_t * ui_number25;
+lv_obj_t * ui_Imagenumber25;
+lv_obj_t * ui_infcontainernumber25;
+lv_obj_t * ui_ImgButtonleftnumber25;
+lv_obj_t * ui_label1number25;
+lv_obj_t * ui_label2number25;
+lv_obj_t * ui_ImgButtonrightnumber25;
+lv_obj_t * ui_number24;
+lv_obj_t * ui_Imagenumber24;
+lv_obj_t * ui_infcontainernumber24;
+lv_obj_t * ui_ImgButtonleftnumber24;
+lv_obj_t * ui_label1number24;
+lv_obj_t * ui_label2number24;
+lv_obj_t * ui_ImgButtonrightnumber24;
+lv_obj_t * ui_number23;
+lv_obj_t * ui_Imagenumber23;
+lv_obj_t * ui_infcontainernumber23;
+lv_obj_t * ui_ImgButtonleftnumber23;
+lv_obj_t * ui_label1number23;
+lv_obj_t * ui_label2number23;
+lv_obj_t * ui_ImgButtonrightnumber23;
+lv_obj_t * ui_number22;
+lv_obj_t * ui_Imagenumber22;
+lv_obj_t * ui_infcontainernumber22;
+lv_obj_t * ui_ImgButtonleftnumber22;
+lv_obj_t * ui_label1number22;
+lv_obj_t * ui_label2number22;
+lv_obj_t * ui_ImgButtonrightnumber22;
+lv_obj_t * ui_number21;
+lv_obj_t * ui_Imagenumber21;
+lv_obj_t * ui_infcontainernumber21;
+lv_obj_t * ui_ImgButtonleftnumber21;
+lv_obj_t * ui_label1number21;
+lv_obj_t * ui_label2number21;
+lv_obj_t * ui_ImgButtonrightnumber21;
+void ui_event_lastpageButon3(lv_event_t * e);
+
+lv_obj_t * ui_lastpageButon3;
+lv_obj_t * ui_nextpageButon3;
+lv_obj_t * ui_backButton4;
+lv_obj_t * ui_Buttonconfirm3;
+lv_obj_t * ui_Labelconfirm3;
 lv_obj_t * ui____initial_actions0;
 
 // SCREEN: ui_login
@@ -302,6 +387,28 @@ void ui_event_lastpageButon2(lv_event_t * e)
 //         _ui_screen_change(&ui_order3, LV_SCR_LOAD_ANIM_FADE_ON, 500, 0, &ui_order1_screen_init);
 //     }
 // }
+
+
+
+
+
+void ui_event_nextpageButon2(lv_event_t * e)
+{
+    lv_event_code_t event_code = lv_event_get_code(e);
+    lv_obj_t * target = lv_event_get_target(e);
+    if(event_code == LV_EVENT_CLICKED) {
+        _ui_screen_change(&ui_order3, LV_SCR_LOAD_ANIM_FADE_ON, 500, 0, &ui_order3_screen_init);
+    }
+}
+
+void ui_event_lastpageButon3(lv_event_t * e)
+{
+    lv_event_code_t event_code = lv_event_get_code(e);
+    lv_obj_t * target = lv_event_get_target(e);
+    if(event_code == LV_EVENT_CLICKED) {
+        _ui_screen_change(&ui_order2, LV_SCR_LOAD_ANIM_FADE_ON, 500, 0, &ui_order2_screen_init);
+    }
+}
 
 void ui_event_barLabel(lv_event_t * e)
 {
@@ -424,6 +531,8 @@ void ui_init(void)
     lv_disp_set_theme(dispp, theme);
     ui_helloscreen_screen_init();
     ui_order1_screen_init();
+    ui_order2_screen_init();
+    ui_order3_screen_init();
     ui_login_screen_init();
     ui____initial_actions0 = lv_obj_create(NULL);
     lv_disp_load_scr(ui_helloscreen);

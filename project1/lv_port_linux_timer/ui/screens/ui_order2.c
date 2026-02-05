@@ -731,9 +731,28 @@ void ui_order2_screen_init(void)
     lv_obj_set_y(ui_backButton3, 282);
     lv_obj_set_align(ui_backButton3, LV_ALIGN_CENTER);
 
+    ui_Buttonconfirm2 = lv_btn_create(ui_order2);
+    lv_obj_set_width(ui_Buttonconfirm2, 100);
+    lv_obj_set_height(ui_Buttonconfirm2, 50);
+    lv_obj_set_x(ui_Buttonconfirm2, 18);
+    lv_obj_set_y(ui_Buttonconfirm2, 242);
+    lv_obj_set_align(ui_Buttonconfirm2, LV_ALIGN_CENTER);
+    lv_obj_add_flag(ui_Buttonconfirm2, LV_OBJ_FLAG_SCROLL_ON_FOCUS);     /// Flags
+    lv_obj_clear_flag(ui_Buttonconfirm2, LV_OBJ_FLAG_SCROLLABLE);      /// Flags
+
+    ui_Labelconfirm2 = lv_label_create(ui_Buttonconfirm2);
+    lv_obj_set_width(ui_Labelconfirm2, LV_SIZE_CONTENT);   /// 1
+    lv_obj_set_height(ui_Labelconfirm2, LV_SIZE_CONTENT);    /// 1
+    lv_obj_set_x(ui_Labelconfirm2, -1);
+    lv_obj_set_y(ui_Labelconfirm2, 4);
+    lv_obj_set_align(ui_Labelconfirm2, LV_ALIGN_CENTER);
+    lv_label_set_text(ui_Labelconfirm2, "结账");
+    lv_obj_set_style_text_font(ui_Labelconfirm2, &ui_font_chinese30, LV_PART_MAIN | LV_STATE_DEFAULT);
+
+
 
     lv_obj_add_event_cb(ui_backButton3, ui_event_ImgButton1, LV_EVENT_ALL, NULL);
     lv_obj_add_event_cb(ui_lastpageButon2, ui_event_lastpageButon2, LV_EVENT_ALL, NULL);
-    // lv_obj_add_event_cb(ui_nextpageButon2, ui_event_nextpageButon2, LV_EVENT_ALL, NULL);
+    lv_obj_add_event_cb(ui_nextpageButon2, ui_event_nextpageButon2, LV_EVENT_ALL, NULL);
 
 }

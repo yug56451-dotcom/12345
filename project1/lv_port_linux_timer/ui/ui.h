@@ -192,7 +192,92 @@ void ui_event_nextpageButon2(lv_event_t * e);
 extern lv_obj_t * ui_lastpageButon2;
 extern lv_obj_t * ui_nextpageButon2;
 extern lv_obj_t * ui_backButton3;
+extern lv_obj_t * ui_Buttonconfirm2;
+extern lv_obj_t * ui_Labelconfirm2;
 extern lv_obj_t * ui____initial_actions0;
+
+// SCREEN: ui_order3
+void ui_order3_screen_init(void);
+extern lv_obj_t * ui_order3;
+extern lv_obj_t * ui_Container8;
+extern lv_obj_t * ui_number30;
+extern lv_obj_t * ui_Imagenumber30;
+extern lv_obj_t * ui_infcontainernumber30;
+extern lv_obj_t * ui_ImgButtonleftnumber30;
+extern lv_obj_t * ui_label1number30;
+extern lv_obj_t * ui_label2number30;
+extern lv_obj_t * ui_ImgButtonrightnumber30;
+extern lv_obj_t * ui_number29;
+extern lv_obj_t * ui_Imagenumbe29;
+extern lv_obj_t * ui_infcontainernumber29;
+extern lv_obj_t * ui_ImgButtonleftnumber29;
+extern lv_obj_t * ui_label1number29;
+extern lv_obj_t * ui_label2number29;
+extern lv_obj_t * ui_ImgButtonrightnumber29;
+extern lv_obj_t * ui_number28;
+extern lv_obj_t * ui_Imagenumber28;
+extern lv_obj_t * ui_infcontainernumber28;
+extern lv_obj_t * ui_ImgButtonleftnumber28;
+extern lv_obj_t * ui_label1number28;
+extern lv_obj_t * ui_label2number28;
+extern lv_obj_t * ui_ImgButtonrightnumber28;
+extern lv_obj_t * ui_number27;
+extern lv_obj_t * ui_Imagenumber27;
+extern lv_obj_t * ui_infcontainernumber27;
+extern lv_obj_t * ui_ImgButtonleftnumber27;
+extern lv_obj_t * ui_label1number27;
+extern lv_obj_t * ui_label2number27;
+extern lv_obj_t * ui_ImgButtonrightnumber27;
+extern lv_obj_t * ui_number26;
+extern lv_obj_t * ui_Imagenumber26;
+extern lv_obj_t * ui_infcontainernumber26;
+extern lv_obj_t * ui_ImgButtonleftnumber26;
+extern lv_obj_t * ui_label1number26;
+extern lv_obj_t * ui_label2number26;
+extern lv_obj_t * ui_ImgButtonrightnumber26;
+extern lv_obj_t * ui_number25;
+extern lv_obj_t * ui_Imagenumber25;
+extern lv_obj_t * ui_infcontainernumber25;
+extern lv_obj_t * ui_ImgButtonleftnumber25;
+extern lv_obj_t * ui_label1number25;
+extern lv_obj_t * ui_label2number25;
+extern lv_obj_t * ui_ImgButtonrightnumber25;
+extern lv_obj_t * ui_number24;
+extern lv_obj_t * ui_Imagenumber24;
+extern lv_obj_t * ui_infcontainernumber24;
+extern lv_obj_t * ui_ImgButtonleftnumber24;
+extern lv_obj_t * ui_label1number24;
+extern lv_obj_t * ui_label2number24;
+extern lv_obj_t * ui_ImgButtonrightnumber24;
+extern lv_obj_t * ui_number23;
+extern lv_obj_t * ui_Imagenumber23;
+extern lv_obj_t * ui_infcontainernumber23;
+extern lv_obj_t * ui_ImgButtonleftnumber23;
+extern lv_obj_t * ui_label1number23;
+extern lv_obj_t * ui_label2number23;
+extern lv_obj_t * ui_ImgButtonrightnumber23;
+extern lv_obj_t * ui_number22;
+extern lv_obj_t * ui_Imagenumber22;
+extern lv_obj_t * ui_infcontainernumber22;
+extern lv_obj_t * ui_ImgButtonleftnumber22;
+extern lv_obj_t * ui_label1number22;
+extern lv_obj_t * ui_label2number22;
+extern lv_obj_t * ui_ImgButtonrightnumber22;
+extern lv_obj_t * ui_number21;
+extern lv_obj_t * ui_Imagenumber21;
+extern lv_obj_t * ui_infcontainernumber21;
+extern lv_obj_t * ui_ImgButtonleftnumber21;
+extern lv_obj_t * ui_label1number21;
+extern lv_obj_t * ui_label2number21;
+extern lv_obj_t * ui_ImgButtonrightnumber21;
+void ui_event_lastpageButon3(lv_event_t * e);
+extern lv_obj_t * ui_lastpageButon3;
+extern lv_obj_t * ui_nextpageButon3;
+extern lv_obj_t * ui_backButton4;
+extern lv_obj_t *ui_Buttonconfirm3;
+extern lv_obj_t *ui_Labelconfirm3;
+extern lv_obj_t * ui____initial_actions0;
+
 // SCREEN: ui_login
 void ui_login_screen_init(void);
 extern lv_obj_t * ui_login;
@@ -239,9 +324,32 @@ extern lv_obj_t * ui____initial_actions0;
 LV_IMG_DECLARE(ui__temporary_image);
 LV_IMG_DECLARE(ui_img_1852348671);    // assets/欢迎.png
 LV_IMG_DECLARE(ui_img_1485140228);    // assets/背景图.png
-LV_IMG_DECLARE(ui_img_1119412587);    // assets/番茄牛肉.png
+LV_IMG_DECLARE(ui_img_814352610);    // assets/猪肉炖粉条.png
 LV_IMG_DECLARE(ui_img_221393495);    // assets/减号.png
 LV_IMG_DECLARE(ui_img_1284172916);    // assets/加号.png
+LV_IMG_DECLARE(ui_img_1429700948);    // assets/番茄炒蛋.png
+LV_IMG_DECLARE(ui_img_403749227);    // assets/紫苏田螺.png
+LV_IMG_DECLARE(ui_img_784203148);    // assets/红烧带鱼.png
+LV_IMG_DECLARE(ui_img_462669028);    // assets/红烧排骨.png
+LV_IMG_DECLARE(ui_img_1181513690);    // assets/红烧狮子头.png
+LV_IMG_DECLARE(ui_img_139154128);    // assets/锅包肉.png
+LV_IMG_DECLARE(ui_img_2035788098);    // assets/麻婆豆腐.png
+LV_IMG_DECLARE(ui_img_730871066);    // assets/八宝饭.png
+LV_IMG_DECLARE(ui_img_1555166206);    // assets/白切鸡.png
+LV_IMG_DECLARE(ui_img_lastpage_png);    // assets/lastpage.png
+LV_IMG_DECLARE(ui_img_nextpage_png);    // assets/nextpage.png
+LV_IMG_DECLARE(ui_img_1609717271);    // assets/返回.png
+LV_IMG_DECLARE(ui_img_1929884129);    // assets/青岛啤酒鸭.png
+LV_IMG_DECLARE(ui_img_1098883221);    // assets/西湖醋鱼.png
+LV_IMG_DECLARE(ui_img_4629151);    // assets/手抓饼.png
+LV_IMG_DECLARE(ui_img_1081994314);    // assets/烧肉拌饭.png
+LV_IMG_DECLARE(ui_img_1980033473);    // assets/烧鹅.png
+LV_IMG_DECLARE(ui_img_990302588);    // assets/泡椒凤爪.png
+LV_IMG_DECLARE(ui_img_1056385595);    // assets/辣子鸡.png
+LV_IMG_DECLARE(ui_img_2103126394);    // assets/毛血旺.png
+LV_IMG_DECLARE(ui_img_1483454965);    // assets/干煸豆角.png
+LV_IMG_DECLARE(ui_img_1051774729);    // assets/叉烧.png
+LV_IMG_DECLARE(ui_img_1119412587);    // assets/番茄牛肉.png
 LV_IMG_DECLARE(ui_img_412946995);    // assets/小炒肉.png
 LV_IMG_DECLARE(ui_img_1143013810);    // assets/剁椒皮皮虾.png
 LV_IMG_DECLARE(ui_img_682017832);    // assets/鱼香肉丝.png
@@ -251,17 +359,7 @@ LV_IMG_DECLARE(ui_img_1855500935);    // assets/宫保鸡丁.png
 LV_IMG_DECLARE(ui_img_293691247);    // assets/秘制红烧肉.png
 LV_IMG_DECLARE(ui_img_1341173067);    // assets/新回锅肉.png
 LV_IMG_DECLARE(ui_img_2092529074);    // assets/红烧鲈鱼.png
-LV_IMG_DECLARE(ui_img_lastpage_png);    // assets/lastpage.png
-LV_IMG_DECLARE(ui_img_nextpage_png);    // assets/nextpage.png
-LV_IMG_DECLARE(ui_img_1609717271);    // assets/返回.png
-LV_IMG_DECLARE(ui_img_814352610);    // assets/猪肉炖粉条.png
-LV_IMG_DECLARE(ui_img_1429700948);    // assets/番茄炒蛋.png
-LV_IMG_DECLARE(ui_img_403749227);    // assets/紫苏田螺.png
-LV_IMG_DECLARE(ui_img_784203148);    // assets/红烧带鱼.png
-LV_IMG_DECLARE(ui_img_462669028);    // assets/红烧排骨.png
-LV_IMG_DECLARE(ui_img_1181513690);    // assets/红烧狮子头.png
-LV_IMG_DECLARE(ui_img_139154128);    // assets/锅包肉.png
-LV_IMG_DECLARE(ui_img_2035788098);    // assets/麻婆豆腐.png
+LV_IMG_DECLARE(ui_img_112040420);     //土豆炖牛肉
 
 
 
