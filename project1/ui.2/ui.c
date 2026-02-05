@@ -421,6 +421,7 @@ void ui_init(void)
     lv_disp_set_theme(dispp, theme);
     ui_helloscreen_screen_init();
     ui_order1_screen_init();
+    ui_order2_screen_init();
     ui_login_screen_init();
     ui____initial_actions0 = lv_obj_create(NULL);
     lv_disp_load_scr(ui_helloscreen);

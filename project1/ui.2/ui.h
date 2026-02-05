@@ -187,6 +187,8 @@ extern lv_obj_t * ui_ImgButtonleftnumber11;
 extern lv_obj_t * ui_label1number11;
 extern lv_obj_t * ui_label2number11;
 extern lv_obj_t * ui_ImgButtonrightnumber11;
+extern lv_obj_t * ui_Buttonconfirm2;
+extern lv_obj_t * ui_Labelconfirm2;
 void ui_event_lastpageButon2(lv_event_t * e);
 void ui_event_nextpageButon2(lv_event_t * e);
 extern lv_obj_t * ui_lastpageButon2;
@@ -237,6 +239,7 @@ extern lv_obj_t * ui____initial_actions0;
 
 
 LV_IMG_DECLARE(ui__temporary_image);
+LV_IMG_DECLARE(ui_img_1852348671);    // assets/欢迎.png
 LV_IMG_DECLARE(ui_img_1485140228);    // assets/背景图.png
 LV_IMG_DECLARE(ui_img_1119412587);    // assets/番茄牛肉.png
 LV_IMG_DECLARE(ui_img_221393495);    // assets/减号.png

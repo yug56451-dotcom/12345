@@ -104,11 +104,95 @@ extern lv_obj_t * ui_label1number1;
 extern lv_obj_t * ui_label2number1;
 extern lv_obj_t * ui_ImgButtonrightnumber1;
 void ui_event_ImgButton1(lv_event_t * e);
-extern lv_obj_t * ui_ImgButton1;
-extern lv_obj_t * ui_ImgButton2;
-extern lv_obj_t * ui_ImgButton3;
+void ui_event_nextpageButon1(lv_event_t * e);
+extern lv_obj_t * ui_lastpageButon1;
+extern lv_obj_t * ui_nextpageButon1;
+extern lv_obj_t * ui_backButton2;
+// extern lv_obj_t * ui_ImgButton1;
+// extern lv_obj_t * ui_ImgButton2;
+// extern lv_obj_t * ui_ImgButton3;
 extern lv_obj_t * ui_Buttonconfirm1;
 extern lv_obj_t * ui_Labelconfirm1;
+// SCREEN: ui_order2
+void ui_order2_screen_init(void);
+extern lv_obj_t * ui_order2;
+extern lv_obj_t * ui_Container7;
+extern lv_obj_t * ui_number20;
+extern lv_obj_t * ui_Imagenumber20;
+extern lv_obj_t * ui_infcontainernumber20;
+extern lv_obj_t * ui_ImgButtonleftnumber20;
+extern lv_obj_t * ui_label1number20;
+extern lv_obj_t * ui_label2number20;
+extern lv_obj_t * ui_ImgButtonrightnumber20;
+extern lv_obj_t * ui_number19;
+extern lv_obj_t * ui_Imagenumber19;
+extern lv_obj_t * ui_infcontainernumber19;
+extern lv_obj_t * ui_ImgButtonleftnumber19;
+extern lv_obj_t * ui_label1number19;
+extern lv_obj_t * ui_label2number19;
+extern lv_obj_t * ui_ImgButtonrightnumber19;
+extern lv_obj_t * ui_number18;
+extern lv_obj_t * ui_Imagenumber18;
+extern lv_obj_t * ui_infcontainernumber18;
+extern lv_obj_t * ui_ImgButtonleftnumber18;
+extern lv_obj_t * ui_labelnumber18;
+extern lv_obj_t * ui_label1number18;
+extern lv_obj_t * ui_ImgButtonrightnumber18;
+extern lv_obj_t * ui_number17;
+extern lv_obj_t * ui_Imagenumber17;
+extern lv_obj_t * ui_infcontainernumber17;
+extern lv_obj_t * ui_ImgButtonleftnumber17;
+extern lv_obj_t * ui_label5number17;
+extern lv_obj_t * ui_label1number17;
+extern lv_obj_t * ui_ImgButtonright3number17;
+extern lv_obj_t * ui_number16;
+extern lv_obj_t * ui_Imagenumber16;
+extern lv_obj_t * ui_infcontainernumber16;
+extern lv_obj_t * ui_ImgButtonleftnumber16;
+extern lv_obj_t * ui_label1number16;
+extern lv_obj_t * ui_label2number16;
+extern lv_obj_t * ui_ImgButtonrightnumber16;
+extern lv_obj_t * ui_number15;
+extern lv_obj_t * ui_Imagenumber15;
+extern lv_obj_t * ui_infcontainernumber15;
+extern lv_obj_t * ui_ImgButtonleftnumber15;
+extern lv_obj_t * ui_label1number15;
+extern lv_obj_t * ui_label2number15;
+extern lv_obj_t * ui_ImgButtonrightnumber15;
+extern lv_obj_t * ui_number14;
+extern lv_obj_t * ui_Imagenumber14;
+extern lv_obj_t * ui_infcontainernumber14;
+extern lv_obj_t * ui_ImgButtonleftnumber14;
+extern lv_obj_t * ui_label1number14;
+extern lv_obj_t * ui_label2number14;
+extern lv_obj_t * ui_ImgButtonrightnumber14;
+extern lv_obj_t * ui_number13;
+extern lv_obj_t * ui_Imagenumber13;
+extern lv_obj_t * ui_infcontainernumber13;
+extern lv_obj_t * ui_ImgButtonleftnumber13;
+extern lv_obj_t * ui_label1number13;
+extern lv_obj_t * ui_label2number13;
+extern lv_obj_t * ui_ImgButtonrightnumber13;
+extern lv_obj_t * ui_number12;
+extern lv_obj_t * ui_Imagenumbe12;
+extern lv_obj_t * ui_infcontainernumber12;
+extern lv_obj_t * ui_ImgButtonleftnumber12;
+extern lv_obj_t * ui_label1number12;
+extern lv_obj_t * ui_label2number12;
+extern lv_obj_t * ui_ImgButtonrightnumber12;
+extern lv_obj_t * ui_number11;
+extern lv_obj_t * ui_Imagenumber11;
+extern lv_obj_t * ui_infcontainernumber11;
+extern lv_obj_t * ui_ImgButtonleftnumber11;
+extern lv_obj_t * ui_label1number11;
+extern lv_obj_t * ui_label2number11;
+extern lv_obj_t * ui_ImgButtonrightnumber11;
+void ui_event_lastpageButon2(lv_event_t * e);
+void ui_event_nextpageButon2(lv_event_t * e);
+extern lv_obj_t * ui_lastpageButon2;
+extern lv_obj_t * ui_nextpageButon2;
+extern lv_obj_t * ui_backButton3;
+extern lv_obj_t * ui____initial_actions0;
 // SCREEN: ui_login
 void ui_login_screen_init(void);
 extern lv_obj_t * ui_login;
@@ -167,9 +251,17 @@ LV_IMG_DECLARE(ui_img_1855500935);    // assets/宫保鸡丁.png
 LV_IMG_DECLARE(ui_img_293691247);    // assets/秘制红烧肉.png
 LV_IMG_DECLARE(ui_img_1341173067);    // assets/新回锅肉.png
 LV_IMG_DECLARE(ui_img_2092529074);    // assets/红烧鲈鱼.png
-LV_IMG_DECLARE(ui_img_1609717271);    // assets/返回.png
 LV_IMG_DECLARE(ui_img_lastpage_png);    // assets/lastpage.png
 LV_IMG_DECLARE(ui_img_nextpage_png);    // assets/nextpage.png
+LV_IMG_DECLARE(ui_img_1609717271);    // assets/返回.png
+LV_IMG_DECLARE(ui_img_814352610);    // assets/猪肉炖粉条.png
+LV_IMG_DECLARE(ui_img_1429700948);    // assets/番茄炒蛋.png
+LV_IMG_DECLARE(ui_img_403749227);    // assets/紫苏田螺.png
+LV_IMG_DECLARE(ui_img_784203148);    // assets/红烧带鱼.png
+LV_IMG_DECLARE(ui_img_462669028);    // assets/红烧排骨.png
+LV_IMG_DECLARE(ui_img_1181513690);    // assets/红烧狮子头.png
+LV_IMG_DECLARE(ui_img_139154128);    // assets/锅包肉.png
+LV_IMG_DECLARE(ui_img_2035788098);    // assets/麻婆豆腐.png
 
 
 

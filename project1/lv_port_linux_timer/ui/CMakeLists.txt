@@ -1,5 +1,6 @@
 SET(SOURCES screens/ui_helloscreen.c
     screens/ui_order1.c
+    screens/ui_order2.c
     screens/ui_login.c
     ui.c
     components/ui_comp_hook.c
